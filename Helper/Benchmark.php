@@ -25,7 +25,7 @@ class Benchmark extends AbstractHelper
     /**
      * Get Benchmark is enable or not
      */
-    const BENCHMARK_ENABLE = 1;
+    const BENCHMARK_ENABLE = 0;
 
     /**
      * @var \KiwiCommerce\AdminActivity\Logger\Logger
