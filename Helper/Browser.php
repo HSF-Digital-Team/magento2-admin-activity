@@ -207,7 +207,7 @@ class Browser extends \Magento\Framework\App\Helper\AbstractHelper
      */
     function isBrowser($browserName)
     {
-        return (0 == strcasecmp($this->_browser_name, trim($browserName)));
+        return (0 == strcasecmp($this->_browser_name, trim((string) $browserName)));
     }
 
     /**
