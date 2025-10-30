@@ -44,10 +44,10 @@ class Action
 
     /**
      * Get before dispatch data
-     * @param \Magento\Backend\App\AbstractAction $controller
+     * @param \Magento\Backend\App\AbstractAction|\Magento\Framework\App\Action\Forward $controller
      * @return void
      */
-    public function beforeDispatch(\Magento\Backend\App\AbstractAction $controller)
+    public function beforeDispatch(\Magento\Backend\App\AbstractAction|\Magento\Framework\App\Action\Forward $controller)
     {
         $this->benchmark->start(__METHOD__);
         $actionName = $controller->getRequest()->getActionName();
@@ -58,3 +58,4 @@ class Action
         $this->benchmark->end(__METHOD__);
     }
 }
+
