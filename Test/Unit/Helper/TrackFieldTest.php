@@ -32,7 +32,7 @@ class TrackFieldTest extends \PHPUnit\Framework\TestCase
     /**
      * @requires PHP 7.0
      */
-    public function setUp()
+    public function setUp(): void
     {
         $context = $this->getMockBuilder(\Magento\Framework\App\Helper\Context::class)
             ->disableOriginalConstructor()

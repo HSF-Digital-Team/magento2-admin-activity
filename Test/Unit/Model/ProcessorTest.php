@@ -39,7 +39,7 @@ class ProcessorTest extends \PHPUnit\Framework\TestCase
     /**
      * @requires PHP 7.0
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->configMock = $this->getMockBuilder(\KiwiCommerce\AdminActivity\Model\Config::class)
             ->setMethods(['getEventByAction','getTrackFieldModel','getEventModel','getActivityModuleConstant'])

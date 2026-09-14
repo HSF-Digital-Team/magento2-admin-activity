@@ -27,7 +27,7 @@ class SelectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @requires PHP 7.0
      */
-    public function setUp()
+    public function setUp(): void
     {
         $objectManager = new \Magento\Framework\TestFramework\Unit\Helper\ObjectManager($this);
 

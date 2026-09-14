@@ -33,7 +33,7 @@ class SaveBeforeTest extends \PHPUnit\Framework\TestCase
     /**
      * @requires PHP 7.0
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->processorMock = $this->getMockBuilder(\KiwiCommerce\AdminActivity\Model\Processor::class)
             ->disableOriginalConstructor()

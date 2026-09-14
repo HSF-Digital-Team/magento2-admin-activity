@@ -22,7 +22,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     /**
      * @requires PHP 7.0
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->context = $this->getMockBuilder(\Magento\Framework\App\Helper\Context::class)
             ->disableOriginalConstructor()
